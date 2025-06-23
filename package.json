@@ -1,0 +1,34 @@
+{
+  "name": "scientific-calculator",
+  "version": "1.0.0",
+  "description": "A scientific calculator web application built with React and Node.js",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "nodemon server/server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "npm run build --prefix client",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "calculator",
+    "scientific",
+    "react",
+    "node"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mathjs": "^11.11.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.1",
+    "nodemon": "^3.0.2"
+  }
+}
+
+### 2. server/server.js
